@@ -7,12 +7,7 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @post.content %>
-</p>
-
-<p>
-  <strong>Auther:</strong>
-  <%= @post.auther %>
+  <%= sanitize @post.content %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
